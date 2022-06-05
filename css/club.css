@@ -1,5 +1,15 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap');
 
+@font-face {
+    font-family: "Inria Sans";
+    src: url("../fonts/InriaSans-Bold.ttf") format('ttf');
+    src: url("../fonts/InriaSans-BoldItalic.ttf") format('ttf');
+    src: url("../fonts/InriaSans-Italic.ttf") format('ttf');
+    src: url("../fonts/InriaSans-Light.ttf") format('ttf');
+    src: url("../fonts/InriaSans-LightItalic.ttf") format('ttf');
+    src: url("../fonts/InriaSans-Regular.ttf") format('ttf');
+}
+
 html {
     scroll-behavior: smooth;
 }
