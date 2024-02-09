@@ -1,14 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap');
-
-@font-face {
-    font-family: "Inria Sans";
-    src: url("../fonts/InriaSans-Bold.ttf") format('ttf');
-    src: url("../fonts/InriaSans-BoldItalic.ttf") format('ttf');
-    src: url("../fonts/InriaSans-Italic.ttf") format('ttf');
-    src: url("../fonts/InriaSans-Light.ttf") format('ttf');
-    src: url("../fonts/InriaSans-LightItalic.ttf") format('ttf');
-    src: url("../fonts/InriaSans-Regular.ttf") format('ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -48,10 +38,10 @@ body {
     outline: none;
 }
 
-    .search-input::placeholder {
-        color: #0E0D26;
-        width: 100%;
-    }
+.search-input::placeholder {
+    color: #0E0D26;
+    width: 100%;
+}
 
 /* -----ITEMS----- */
 .fixed-titles {
@@ -89,15 +79,15 @@ body {
     z-index: -1;
 }
 
-    .list > span {
-        display: block;
-        text-transform: uppercase;
-        transition: 0.3s ease-out;
-    }
+.list>span {
+    display: block;
+    text-transform: uppercase;
+    transition: 0.3s ease-out;
+}
 
-        .list > span:hover {
-            margin-bottom: 5%;
-        }
+.list>span:hover {
+    margin-bottom: 5%;
+}
 
 .item:hover .list {
     opacity: 1;
@@ -130,6 +120,7 @@ body {
     background-color: #392973;
     height: 700px;
     position: relative;
+
 }
 
 .header-content {
@@ -162,13 +153,13 @@ body {
     position: relative;
 }
 
-    .words > p {
-        margin: 0%;
-        position: absolute;
-        animation-duration: 5s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-    }
+.words>p {
+    margin: 0%;
+    position: absolute;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
 
 .word1 {
     animation-name: w1;
@@ -190,6 +181,7 @@ body {
     26%, 100% {
         opacity: 0;
     }
+
 }
 
 @keyframes w2 {
@@ -204,6 +196,7 @@ body {
     51%, 100% {
         opacity: 0;
     }
+
 }
 
 @keyframes w3 {
@@ -214,6 +207,7 @@ body {
     51%, 100% {
         opacity: 1;
     }
+
 }
 
 
@@ -254,7 +248,7 @@ main {
     transition: 0.3s;
 }
 
-.info-card a:hover > p {
+.info-card a:hover>p {
     letter-spacing: 2px;
 }
 
@@ -340,33 +334,21 @@ main {
     display: none;
 }
 
-.cards-container > div {
+.cards-container>div {
     background-color: #ccc;
     margin: 0 3%;
-}
-
-.course {
-    background-image: url("../images/courses-cover.svg");
-}
-
-.book {
-    background-image: url("../images/books-cover.svg");
-}
-
-.article {
-    background-image: url("../images/articles-cover.svg");
 }
 
 /* -----CARDS----- */
 .card {
     width: 240px;
-    height: 240px;
+    height: 220px;
     color: #0E0D26;
     background-color: #fff;
     display: inline-block;
     padding: 10px;
     position: relative;
-    transform: translateY(70%);
+    transform: translateY(78%);
     transition: 0.3s;
 }
 
@@ -387,7 +369,6 @@ main {
     width: 220px;
     height: 150px;
     overflow: hidden;
-    display: none;
 }
 
 .card-footer {
@@ -395,7 +376,7 @@ main {
     height: 20px;
     display: flex;
     position: absolute;
-    bottom: 30px;
+    bottom: 10px;
     color: #505050;
     justify-content: space-between;
     line-height: 20px;
@@ -422,16 +403,13 @@ main {
 
 .by {
     text-transform: uppercase;
-    margin: 0 2px;
-    display: flex;
-    overflow: hidden;
+    margin: 0% 5%;
 }
 
 a {
     text-decoration: none;
     color: #0E0D26;
 }
-
 
 /* -----BACK TO TOP BUTTON----- */
 .return-up {
@@ -467,11 +445,11 @@ a {
     justify-content: space-around;
 }
 
-.footer > p {
+.footer>p {
     margin: 0;
 }
 
-.footer > p > a {
+.footer>p>a {
     text-decoration: underline;
     text-transform: uppercase;
     color: #0E0D26;
