@@ -1,0 +1,355 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap');
+
+@font-face {
+    font-family: "Inria Sans";
+    src: url("../fonts/InriaSans-Bold.ttf") format('ttf');
+    src: url("../fonts/InriaSans-BoldItalic.ttf") format('ttf');
+    src: url("../fonts/InriaSans-Italic.ttf") format('ttf');
+    src: url("../fonts/InriaSans-Light.ttf") format('ttf');
+    src: url("../fonts/InriaSans-LightItalic.ttf") format('ttf');
+    src: url("../fonts/InriaSans-Regular.ttf") format('ttf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inria Sans', sans-serif;
+    padding: 0%;
+    margin: 0%;
+    background-color: #0E0D26;
+}
+
+
+/* ----------MENU BAR---------- */
+
+.menu-bar {
+    background-color: #fff;
+    height: 40px;
+    line-height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    cursor: default;
+}
+
+/* -----SEARCH----- */
+.search-input {
+    border: none;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 24px;
+    color: #0E0D26;
+    text-decoration: underline;
+    line-height: 25px;
+    width: 50%;
+    margin-left: 50%;
+    outline: none;
+}
+
+.search-input::placeholder {
+    color: #0E0D26;
+    width: 100%;
+}
+
+/* -----ITEMS----- */
+.fixed-titles {
+    height: 40px;
+    color: #0E0D26;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.item {
+    margin: 0% 2%;
+    position: relative;
+}
+
+.title {
+    font-size: 30px;
+    line-height: 40px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin: 0%;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+.list {
+    background-color: #fff;
+    padding: 10px;
+    line-height: 30px;
+    transform: translateY(-100%);
+    transition: 0.3s ease-out;
+    position: absolute;
+    z-index: -1;
+}
+
+.list > span {
+    display: block;
+    text-transform: uppercase;
+    transition: 0.3s ease-out;
+}
+
+.list > span:hover {
+    margin-bottom: 5%;
+}
+
+.item:hover .list {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+/* -----PROFILE----- */
+.profile {
+    margin-left: 70%;
+}
+
+.fa-user {
+    color: #fff;
+    font-size: 26px;
+    float: right;
+    background-color: #0E0D26;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    line-height: 36px;
+    text-align: center;
+    transform: translateY(5px);
+}
+
+
+/* ----------MAIN---------- */
+
+main {
+    padding: 10%;
+}
+
+.write-title {
+    font-size: 24px;
+    color: #fff;
+}
+
+.write-space {
+    background-color: #fff;
+    padding: 2%;
+}
+
+.category {
+    color: #0E0D26;
+    background: none;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Inria Sans', sans-serif;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.category-option {
+    font-size: 18px;
+}
+
+.textarea {
+    border-radius: 0%;
+    background: none;
+    outline: none;
+    border: #0E0D26 2px solid;
+    width: 98%;
+    height: 100px;
+    display: block;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding: 1%;
+}
+
+.post-btn {
+    background: #392973;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 2%;
+    width: 15%;
+    height: 40px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.post-btn:hover {
+    filter: brightness(0.9);
+    letter-spacing: 0px;
+}
+
+
+/* -----TOP SECTIONS----- */
+.top-sec {
+    margin: 10% 0;
+}
+
+.sec-title {
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.cards-container {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+    height: 240px;
+}
+
+.cards-container::-webkit-scrollbar {
+    display: none;
+}
+
+.cards-container > div {
+    background-color: #ccc;
+    margin: 0 3%;
+}
+
+.course {
+    background-image: url("../images/courses-cover.svg");
+}
+
+.book {
+    background-image: url("../images/books-cover.svg");
+}
+
+.article {
+    background-image: url("../images/articles-cover.svg");
+}
+
+/* -----CARDS----- */
+.card {
+    width: 240px;
+    height: 240px;
+    color: #0E0D26;
+    background-color: #fff;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    transform: translateY(70%);
+    transition: 0.3s;
+}
+
+.cards-container div:hover .card {
+    transform: translateY(0%);
+}
+
+.card-name {
+    font-size: 32px;
+    width: 220px;
+    margin: 0%;
+    padding: 0%;
+    text-transform: uppercase;
+}
+
+.card-description {
+    margin: 0%;
+    width: 220px;
+    height: 150px;
+    overflow: hidden;
+    display: none;
+}
+
+.card-footer {
+    width: 220px;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    color: #505050;
+    justify-content: space-between;
+    line-height: 20px;
+    font-weight: lighter;
+}
+
+.source-logo {
+    float: right;
+}
+
+.fa-youtube {
+    color: inherit;
+    font-size: 24px;
+}
+
+.save-link {
+    color: inherit;
+    font-size: 20px;
+}
+
+.by-container {
+    display: flex;
+}
+
+.by {
+    text-transform: uppercase;
+    margin: 0 2px;
+    display: flex;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #0E0D26;
+}
+
+
+/* -----BACK TO TOP BUTTON----- */
+.return-up {
+    position: absolute;
+    right: 10%;
+    transform: translateY(100%);
+    transition: 0.3s;
+}
+
+.return-up:hover {
+    letter-spacing: 3px;
+}
+
+.return-up a {
+    padding: 2px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #392973;
+    background-color: #fff;
+}
+
+
+/* ----------FOOTER---------- */
+
+.footer {
+    color: #0E0D26;
+    background-color: #fff;
+    display: flex;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    justify-content: space-around;
+}
+
+.footer > p {
+    margin: 0;
+}
+
+.footer > p > a {
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #0E0D26;
+}
+
+.copyrights {
+    text-transform: uppercase;
+}
